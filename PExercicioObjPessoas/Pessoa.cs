@@ -13,45 +13,44 @@ namespace PExercicioObjPessoas
         int diaNasc;
         int mesNasc;
         int anoNasc;
-        int cpf;
-        int numTelefone;
+        String cpf;
+        String numTelefone;
 
-        public void setNome(String nome) /// Método SET para receber o nome
+        ///Método Construtor (obs: NÃO ESQUECER!)
+        public Pessoa ()
         {
-            this.nome = nome;
-        }
-        public void setDiaNasc(int diaNasc) // Método SET para receber o dia de nascimento
-        {
-            this.diaNasc = diaNasc;
-        }
-        public void setMesNasc(int mesNasc) // Método SET para receber o mês de nascimento
-        {
-            this.mesNasc = mesNasc;
-        }
-        public void setAnoNasc(int anoNasc) // Método SET para receber o ano de nascimento
-        {
-            this.anoNasc = anoNasc;
-        }
 
-        public void setCPF(int cpf)
-        {
-            this.cpf = cpf;
         }
-        public void setTelefone(int telefone)
+        //////////////////////////////////////////////////////
+
+        public void setNome() /// Método SET para receber o nome
         {
-            this.numTelefone = telefone;
+            this.nome = Console.ReadLine();
         }
-        public override string ToString()
+        public void setDiaNasc() // Método SET para receber o dia de nascimento
+        {
+            this.diaNasc = int.Parse(Console.ReadLine());
+        }
+        public void setMesNasc() // Método SET para receber o mês de nascimento
+        {
+            this.mesNasc = int.Parse(Console.ReadLine());
+        }
+        public void setAnoNasc() // Método SET para receber o ano de nascimento
+        {
+            this.anoNasc = int.Parse(Console.ReadLine());
+        }
+        public void setCPF() // Método SET para receber o CPF
+        {
+            this.cpf = Console.ReadLine();
+        }
+        public void setTelefone()
+        {
+            this.numTelefone = Console.ReadLine(); // Método SET para receber o Telefone
+        }
+        public override string ToString() // Método para escrever todos os atributos do objeto de uma só vez:
         {
             return "Nome: " + nome + "\nData de Nascimento: " + diaNasc + "/" + mesNasc + "/" + anoNasc + "\n" +
                    "CPF: " + cpf + "\nTelefone: " + numTelefone;
-        }
-
-
-
-        public String getNome ()
-        {
-            return nome;    
         }
     }
 }
