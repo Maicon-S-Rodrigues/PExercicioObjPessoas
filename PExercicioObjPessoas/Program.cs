@@ -6,117 +6,61 @@ namespace PExercicioObjPessoas
     {
         static void Main(string[] args)
         {
-            string pessoa;
-            int diaNasc, mesNasc, anoNasc;
-            int cpf, telefone;
-            Pessoa pessoaObj1 = new Pessoa();
-            Pessoa pessoaObj2 = new Pessoa();
-            Pessoa pessoaObj3 = new Pessoa();
+            Pessoa obj1 = new Pessoa();
+            Pessoa obj2 = new Pessoa();
+            Pessoa obj3 = new Pessoa();
 
-            ///////////////////////////////////////////////////////////////////////////
-            ///Inserir dados no Objeto Pessoa1
-            Console.WriteLine("Inserção de dados da Primeira Pessoa:\n" +
-                              "Aperte qualquer tecla para continuar...");
-            Console.ReadKey();
+            Console.WriteLine("Inserindo dados no cadastro da Primeira pessoa: ");
+            Console.WriteLine("\nNome: ");
+            obj1.setNome();
+            Console.WriteLine("\nDia de Nascimento: ");
+            obj1.setDiaNasc();
+            Console.WriteLine("\nMês de Nascimento: ");
+            obj1.setMesNasc();
+            Console.WriteLine("\nAno de Nascimento: ");
+            obj1.setAnoNasc();
+            Console.WriteLine("\nCPF: ");
+            obj1.setCPF();
+            Console.WriteLine("\nTelefone: ");
+            obj1.setTelefone();
+            /////////////////////////////////////////////////////////////////////////////////
             Console.Clear();
-            Console.WriteLine("Informe o nome da Primeira pessoa no cadastro: ");
-            pessoa = Console.ReadLine();
-            pessoaObj1.setNome(pessoa);
-
-            Console.WriteLine("Dia de Nascimento: ");
-            diaNasc = int.Parse(Console.ReadLine());
-            pessoaObj1.setDiaNasc(diaNasc);
-
-            Console.WriteLine("Mês de Nascimento: ");
-            mesNasc = int.Parse(Console.ReadLine());
-            pessoaObj1.setMesNasc(mesNasc);
-
-            Console.WriteLine("Ano de Nascimento: ");
-            anoNasc = int.Parse(Console.ReadLine());
-            pessoaObj1.setAnoNasc(anoNasc);
-
-            Console.WriteLine("11 digitos do CPF: ");
-            cpf = int.Parse(Console.ReadLine());
-            pessoaObj1.setCPF(cpf);
-
-            Console.WriteLine("Telefone: ");
-            telefone = int.Parse(Console.ReadLine());
-            pessoaObj1.setTelefone(telefone);
-
-            ///////////////////////////////////////////////////////////////////////////
-            ///Inserir dados no Objeto Pessoa2
+            Console.WriteLine("Inserindo dados no cadastro da Segunda pessoa: ");
+            Console.WriteLine("\nNome: ");
+            obj2.setNome();
+            Console.WriteLine("\nDia de Nascimento: ");
+            obj2.setDiaNasc();
+            Console.WriteLine("\nMês de Nascimento: ");
+            obj2.setMesNasc();
+            Console.WriteLine("\nAno de Nascimento: ");
+            obj2.setAnoNasc();
+            Console.WriteLine("\nCPF: ");
+            obj2.setCPF();
+            Console.WriteLine("\nTelefone: ");
+            obj2.setTelefone();
+            /////////////////////////////////////////////////////////////////////////////////
             Console.Clear();
-            Console.WriteLine("Inserção de dados da Segunda Pessoa:\n" +
-                              "Aperte qualquer tecla para continuar...");
-            Console.ReadKey();
+            Console.WriteLine("Inserindo dados no cadastro da Terceira pessoa: ");
+            Console.WriteLine("\nNome: ");
+            obj3.setNome();
+            Console.WriteLine("\nDia de Nascimento: ");
+            obj3.setDiaNasc();
+            Console.WriteLine("\nMês de Nascimento: ");
+            obj3.setMesNasc();
+            Console.WriteLine("\nAno de Nascimento: ");
+            obj3.setAnoNasc();
+            Console.WriteLine("\nCPF: ");
+            obj3.setCPF();
+            Console.WriteLine("\nTelefone: ");
+            obj3.setTelefone();
+            ///////////////////////////////////////////////////////////////////////////////////
             Console.Clear();
-            Console.WriteLine("Informe o nome da Segunda pessoa no cadastro: ");
-            pessoa = Console.ReadLine();
-            pessoaObj2.setNome(pessoa);
-
-            Console.WriteLine("Dia de Nascimento: ");
-            diaNasc = int.Parse(Console.ReadLine());
-            pessoaObj2.setDiaNasc(diaNasc);
-
-            Console.WriteLine("Mês de Nascimento: ");
-            mesNasc = int.Parse(Console.ReadLine());
-            pessoaObj2.setMesNasc(mesNasc);
-
-            Console.WriteLine("Ano de Nascimento: ");
-            anoNasc = int.Parse(Console.ReadLine());
-            pessoaObj2.setAnoNasc(anoNasc);
-
-            Console.WriteLine("11 digitos do CPF: ");
-            cpf = int.Parse(Console.ReadLine());
-            pessoaObj2.setCPF(cpf);
-
-            Console.WriteLine("Telefone: ");
-            telefone = int.Parse(Console.ReadLine());
-            pessoaObj2.setTelefone(telefone);
-
-            ///////////////////////////////////////////////////////////////////////////
-            ///Inserir dados no Objeto Pessoa1
-            Console.Clear();
-            Console.WriteLine("Inserção de dados da Terceira Pessoa:\n" +
-                              "Aperte qualquer tecla para continuar...");
-            Console.ReadKey();
-            Console.Clear();
-            Console.WriteLine("Informe o nome da Terceira pessoa no cadastro: ");
-            pessoa = Console.ReadLine();
-            pessoaObj3.setNome(pessoa);
-
-            Console.WriteLine("Dia de Nascimento: ");
-            diaNasc = int.Parse(Console.ReadLine());
-            pessoaObj3.setDiaNasc(diaNasc);
-
-            Console.WriteLine("Mês de Nascimento: ");
-            mesNasc = int.Parse(Console.ReadLine());
-            pessoaObj3.setMesNasc(mesNasc);
-
-            Console.WriteLine("Ano de Nascimento: ");
-            anoNasc = int.Parse(Console.ReadLine());
-            pessoaObj3.setAnoNasc(anoNasc);
-
-            Console.WriteLine("11 digitos do CPF: ");
-            cpf = int.Parse(Console.ReadLine());
-            pessoaObj3.setCPF(cpf);
-
-            Console.WriteLine("Telefone: ");
-            telefone = int.Parse(Console.ReadLine());
-            pessoaObj3.setTelefone(telefone);
-
-            ////////////////////////////////////////////////////////////////////////
-            ///Mostrar na tela:
-            ///
-            Console.Clear();
-            Console.WriteLine("\nDados da Primeira Pessoa: " + pessoaObj1.ToString());
+            Console.WriteLine("\nDados da Primeira Pessoa: " + obj1.ToString());
             Console.WriteLine("\n----------------------------------------------------------");
-            Console.WriteLine("\nDados da Primeira Pessoa: " + pessoaObj2.ToString());
+            Console.WriteLine("\nDados da Primeira Pessoa: " + obj2.ToString());
             Console.WriteLine("\n----------------------------------------------------------");
-            Console.WriteLine("\nDados da Primeira Pessoa: " + pessoaObj2.ToString());
+            Console.WriteLine("\nDados da Primeira Pessoa: " + obj3.ToString());
             Console.WriteLine("\n----------------------------------------------------------");
-
-
         }
     }
 }
